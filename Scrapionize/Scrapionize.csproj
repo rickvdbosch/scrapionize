@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>0.9.0</Version>
+    <Authors>Rick van den Bosch</Authors>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl>https://github.com/rickvdbosch/scrapionize</RepositoryUrl>
+    <PackageTags>sessionize, parser, scraper, cfp</PackageTags>
+    <Description>Scrapionize (Scrape Sessionize) enables you to get basic CFP data from a Sessionize CFP page.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.32" />
+  </ItemGroup>
+
+</Project>
