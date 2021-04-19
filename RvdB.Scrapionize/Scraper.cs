@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 
 using HtmlAgilityPack;
 
@@ -8,12 +9,22 @@ namespace Scrapionize
 {
 	public class Scraper
 	{
-		public SessionizeData Scrape(string url)
+		/// <summary>
+		/// Gets all of the Sessionize data from the passed in URL.
+		/// </summary>
+		/// <param name="url"><see cref="Uri"/> pointing towards the Sessionize page.</param>
+		/// <returns>A <see cref="SessionizeData"/> instance containing the data for the provided <paramref name="url"/>.</returns>
+		/// <exception cref="ArgumentNullException">Thrown when <paramref name="url"/> is null.</exception>
+		public SessionizeData Scrape(Uri url)
 		{
+			if (url == null)
+			{
+				throw new ArgumentNullException(nameof(url));
+			}
+
 			var result = new SessionizeData();
 
-			var web = new HtmlWeb();
-			var doc = web.Load(url);
+			var doc = new HtmlWeb().Load(url);
 			var descendants = doc.DocumentNode.Descendants();
 
 			result.EventName = descendants.Where(d => d.HasClass("ibox-title")).SelectMany(d => d.Descendants("h4")).FirstOrDefault()?.InnerText;
