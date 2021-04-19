@@ -1,3 +1,5 @@
+using System;
+
 using Xunit;
 
 using Scrapionize;
@@ -11,7 +13,7 @@ namespace Tests
         {
             var scraper = new Scraper();
 
-            var result = scraper.Scrape("https://sessionize.com/build-stuff-2021-lithuania");
+            var result = scraper.Scrape(new Uri("https://sessionize.com/build-stuff-2021-lithuania"));
         }
     }
 }
