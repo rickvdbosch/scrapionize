@@ -1,3 +1,5 @@
+using System;
+
 namespace RvdB.Scrapionize.Models
 {
 	/// <summary>
@@ -9,19 +11,19 @@ namespace RvdB.Scrapionize.Models
 		public string EventName { get; set; }
 
 		/// <summary>Start date of the event.</summary>
-		public string EventStartDate { get; set; }
+		public DateTime EventStartDate { get; set; }
 
 		/// <summary>End date of the event.</summary>
-		public string EventEndDate { get; set; }
+		public DateTime EventEndDate { get; set; }
 
 		/// <summary>URL of the event.</summary>
 		public string EventUrl { get; set; }
 
 		/// <summary>Start date of the CFP.</summary>
-		public string CfpStartDate { get; set; }
+		public DateTime CfpStartDate { get; set; }
 
 		/// <summary>End date of the CFP.</summary>
-		public string CfpEndDate { get; set; }
+		public DateTime CfpEndDate { get; set; }
 
 		/// <summary>Location of the event.</summary>
 		public string Location { get; set; }
