@@ -2,7 +2,7 @@ using System;
 
 using Xunit;
 
-using Scrapionize;
+using RvdB.Scrapionize;
 
 namespace Tests
 {
@@ -14,6 +14,9 @@ namespace Tests
             var scraper = new Scraper();
 
             var result = scraper.Scrape(new Uri("https://sessionize.com/build-stuff-2021-lithuania"));
+
+            Assert.NotNull(result);
+            // TODO Implement actual asserts
         }
     }
 }
