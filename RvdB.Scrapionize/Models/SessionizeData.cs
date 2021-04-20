@@ -1,4 +1,4 @@
-namespace Scrapionize.Models
+namespace RvdB.Scrapionize.Models
 {
 	/// <summary>
 	/// Model that holds the Sessionize CFP data
