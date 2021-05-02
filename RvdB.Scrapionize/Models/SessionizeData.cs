@@ -31,8 +31,8 @@ namespace RvdB.Scrapionize.Models
 		/// <summary>Arrangements around travel for speakers.</summary>
 		public string Travel { get; set; }
 
-		/// <summary>Arrangements around accomodation for speakers.</summary>
-		public string Accomodation { get; set; }
+		/// <summary>Arrangements around accommodation for speakers.</summary>
+		public string Accommodation { get; set; }
 
 		/// <summary>Arrangements around the event fee for speakers.</summary>
 		public string EventFee { get; set; }
