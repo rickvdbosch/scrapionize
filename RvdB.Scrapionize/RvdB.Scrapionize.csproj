@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <Title>Scrapionize</Title>
     <PackageVersion>0.9.4</PackageVersion>
-    <Version>0.9.4</Version>
+    <Version>0.9.5</Version>
     <Authors>Rick van den Bosch</Authors>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageProjectUrl></PackageProjectUrl>
