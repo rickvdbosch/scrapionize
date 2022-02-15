@@ -46,7 +46,7 @@ namespace RvdB.Scrapionize
 			result.CfpEndDate = ParseSessionizeDate(rightHeaders2.ElementAt(1).InnerText);
 
 			var rightHeaders3 = rightColumn.Descendants(Constants.NAME_HEADING3).ToList();
-			rightHeaders3 = rightHeaders3.Skip(rightHeaders3.Count() - 3).ToList();
+			rightHeaders3 = rightHeaders3.Skip(rightHeaders3.Count - 3).ToList();
 			result.Travel = rightHeaders3.ElementAt(0).NextSibling.NextSibling.InnerText;
 			result.Accommodation = rightHeaders3.ElementAt(1).NextSibling.NextSibling.InnerText;
 			result.EventFee = rightHeaders3.ElementAt(2).NextSibling.NextSibling.InnerText;
