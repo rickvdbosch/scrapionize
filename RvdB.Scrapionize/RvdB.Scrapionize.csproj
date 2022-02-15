@@ -4,21 +4,31 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <Title>Scrapionize</Title>
     <PackageVersion>1.0.0</PackageVersion>
-    <Version>1.0.0</Version>
+    <Version>1.1.0</Version>
     <Authors>Rick van den Bosch</Authors>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageProjectUrl></PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/rickvdbosch/scrapionize</PackageProjectUrl>
     <RepositoryUrl>https://github.com/rickvdbosch/scrapionize</RepositoryUrl>
     <PackageTags>sessionize, parser, scraper, cfp</PackageTags>
-    <Description>Scrapionize (Scrape Sessionize) enables you to get basic CFP data from a Sessionize CFP page.</Description>
-    <Copyright>Copyright © 2021 Rick van den Bosch</Copyright>
-    <PackageReleaseNotes>Fixed typo in SessionizeData (breaking change)
-Optimized enumerating HTML elements</PackageReleaseNotes>
+    <Description>Scrapionize (a Scraper for Sessionize) enables you to get basic CFP data from a Sessionize CFP page.</Description>
+    <Copyright>Copyright © 2021 - 2022 Rick van den Bosch</Copyright>
+    <PackageReleaseNotes>Improved readme, added examples, updated packages</PackageReleaseNotes>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <EnforceCodeStyleInBuild>False</EnforceCodeStyleInBuild>
+    <EnableNETAnalyzers>True</EnableNETAnalyzers>
+    <AnalysisLevel>latest-recommended</AnalysisLevel>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="HtmlAgilityPack" Version="1.11.37" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.42" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
   </ItemGroup>
 
 </Project>
