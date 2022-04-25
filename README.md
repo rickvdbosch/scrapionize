@@ -10,12 +10,14 @@ on there. The information we'll get from the CFP page:
 * Start and End date of the CFP
 * Arrangements around Travel, Accomodation and Event Fee for speakers
 
+Scrapionize uses the [HtmlAgilityPack package](https://www.nuget.org/packages/HtmlAgilityPack/) to parse the Sessionize CFP page.
+
 ## Examples
 
-Using Scrapionize is pretty straightforward. There's an interface you can register and a class providing the implementation. If you're using
-.NET dependency injection, there's also an extension method to auto-setup DI.
+Using Scrapionize is pretty straightforward. There's a scraper interface you can register, and a class providing the implementation for
+that interface. If you're using .NET dependency injection, there's also an extension method to auto-setup DI.
 
-### Using .NET Dependency Injection
+### Example: using .NET Dependency Injection
 
 Use the extension method to setup Scrapionize.
 
@@ -23,7 +25,7 @@ Use the extension method to setup Scrapionize.
 builder.Services.AddScrapionize();
 ```
 
-Inject the interface into the constructor of class you want to use it in.
+Inject the interface into the constructor of the class you want to use it in.
 
 ```csharp
 private IScraper _scraper;
@@ -34,15 +36,15 @@ public SomeClass(IScraper scraper)
 }
 ```
 
-And use the scraper to get your Sessionize data!
+And then use the scraper to get your Sessionize data!
 
 ```csharp
 var sessionizeData = _scraper.Scrape(new Uri("<YOUR-SESSIONIZE-URL>"));
 ```
 
-### Using `new`
+### Example: using `new`
 
-Not the preferred way of adding dependencies...
+Not the preferred way of adding dependencies, but still an option.
 
 ```csharp
 var scraper = new Scraper(); //new is glue!
