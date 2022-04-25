@@ -3,8 +3,8 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Title>Scrapionize</Title>
-    <PackageVersion>1.1.0</PackageVersion>
-    <Version>1.1.0</Version>
+    <PackageVersion>1.2.0</PackageVersion>
+    <Version>1.2.0</Version>
     <Authors>Rick van den Bosch</Authors>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageProjectUrl>https://github.com/rickvdbosch/scrapionize</PackageProjectUrl>
@@ -12,7 +12,7 @@
     <PackageTags>sessionize, parser, scraper, cfp</PackageTags>
     <Description>Scrapionize (a Scraper for Sessionize) enables you to get basic CFP data from a Sessionize CFP page.</Description>
     <Copyright>Copyright © 2021 - 2022 Rick van den Bosch</Copyright>
-    <PackageReleaseNotes>Improved readme, added examples, updated packages</PackageReleaseNotes>
+    <PackageReleaseNotes>More readme improvements, better examples, updated package</PackageReleaseNotes>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <EnforceCodeStyleInBuild>False</EnforceCodeStyleInBuild>
     <EnableNETAnalyzers>True</EnableNETAnalyzers>
