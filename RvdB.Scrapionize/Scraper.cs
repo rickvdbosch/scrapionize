@@ -14,7 +14,7 @@ namespace RvdB.Scrapionize
 		/// <summary>
 		/// Gets all of the Sessionize data from the passed in URL.
 		/// </summary>
-		/// <param name="url"><see cref="Uri"/> pointing towards the Sessionize page.</param>
+		/// <param name="url"><see cref="Uri"/> for the Sessionize CFP page.</param>
 		/// <returns>A <see cref="SessionizeData"/> instance containing the data for the provided <paramref name="url"/>.</returns>
 		/// <exception cref="ArgumentNullException">Thrown when <paramref name="url"/> is null.</exception>
 		public SessionizeData Scrape(Uri url)
