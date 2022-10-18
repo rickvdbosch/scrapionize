@@ -1,7 +1,7 @@
 # Scrapionize
 
 Scrapionize (a Scraper for Sessionize) is a NuGet package to scrape a Sessionize CFP page and give you the basic information that's
-on there. The information we'll get from the CFP page:
+on the CFP page. The information we'll get from the CFP page:
 
 * Name of the event
 * Start and End Date of the event
@@ -50,3 +50,8 @@ Not the preferred way of adding dependencies, but still an option.
 var scraper = new Scraper(); //new is glue!
 var sessionizeData = scraper.Scrape(new Uri("<YOUR-SESSIONIZE-URL>"));
 ```
+
+>Hollywood produced an entire movie centered on this principle, in which the LEGO bad-guy was trying to glue pieces together.  
+>Don’t be that guy.  
+>![New is glue!](https://ardalis.com/img/new-glue.png)  
+(_Inspired by the [New is Glue](https://ardalis.com/new-is-glue/) article on [ardalis.com](https://ardalis.com/)_)
