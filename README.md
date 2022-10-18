@@ -1,7 +1,7 @@
 # Scrapionize
 
 Scrapionize (a Scraper for Sessionize) is a NuGet package to scrape a Sessionize CFP page and give you the basic information that's
-on the CFP page. The information we'll get from the CFP page:
+on the CFP page. The information we'll get from the page:
 
 * Name of the event
 * Start and End Date of the event
