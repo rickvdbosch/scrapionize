@@ -22,7 +22,8 @@ namespace Tests
             var result = scraper.Scrape(new Uri("https://sessionize.com/build-stuff-2021-lithuania"));
 
             Assert.NotNull(result);
-            // TODO Implement actual asserts
+            Assert.Equal("Build Stuff 2021 Lithuania", result.EventName);
+            Assert.Equal("http://buildstuff.events", result.EventUrl);
         }
 
         [Fact]
