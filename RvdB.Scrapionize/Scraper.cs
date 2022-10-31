@@ -37,7 +37,6 @@ namespace RvdB.Scrapionize
 			var leftHeaders = leftColumn.Descendants(Constants.NAME_HEADING2).ToList();
 			result.EventStartDate = ParseSessionizeDate(leftHeaders.ElementAt(0).InnerText);
 			result.EventEndDate = ParseSessionizeDate(leftHeaders.ElementAt(1).InnerText);
-			// TODO: parse location
 			result.Location = string.Join(Constants.CARRIAGERETURN_LINEFEED, leftHeaders.ElementAt(2).Descendants(Constants.NAME_SPAN).Select(d => d.InnerText.Trim()));
 			result.EventUrl = leftHeaders.ElementAt(3).Descendants(Constants.NAME_LINK).Single().Attributes[Constants.NAME_HREF].Value;
 
