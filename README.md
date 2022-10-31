@@ -52,6 +52,5 @@ var sessionizeData = scraper.Scrape(new Uri("<YOUR-SESSIONIZE-URL>"));
 ```
 
 >Hollywood produced an entire movie centered on this principle, in which the LEGO bad-guy was trying to glue pieces together.  
->Don’t be that guy.  
->![New is glue!](https://ardalis.com/img/new-glue.png)  
+>Don't be that guy.  
 (_Inspired by the [New is Glue](https://ardalis.com/new-is-glue/) article on [ardalis.com](https://ardalis.com/)_)
