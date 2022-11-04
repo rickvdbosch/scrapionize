@@ -33,9 +33,10 @@ jobs:
     - name: ReportGenerator
       uses: danielpalme/ReportGenerator-GitHub-Action@5.1.10
       with:
-        reports: '**/coverage.cobertura.xml'
-        targetdir: 'coveragereport'
         title: 'Scrapionize coverage report'
+        targetdir: 'coveragereport'
+        reports: '**/coverage.cobertura.xml'
+        reporttypes: 'HtmlInline;Cobertura'
         
     - name: Upload coverage report artifact
       uses: actions/upload-artifact@v2.2.3
