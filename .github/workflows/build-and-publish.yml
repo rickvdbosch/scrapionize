@@ -11,15 +11,39 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 6.x
+        
     - name: Build
       run: dotnet build
+      
     - name: Test
       run: dotnet test --no-build --logger "trx;logfilename=testResults.trx" --collect:"XPlat Code Coverage"
+
+    - name: Test Reporter
+      uses: dorny/test-reporter@v1.6.0
+      with:
+        artifact: 'Test results'
+        name: 'testResults.trx'
+
+    - name: ReportGenerator
+      uses: danielpalme/ReportGenerator-GitHub-Action@5.1.10
+      with:
+        reports: 'coverage.cobertura.xml'
+        targetdir: 'coveragereport'
+        title: 'Scrapionize coverage report'
+        
+    - name: Upload coverage report artifact
+      uses: actions/upload-artifact@v2.2.3
+      with:
+        name: CoverageReport
+        path: 'coveragereport'    
+    
     - name: Pack
       run: dotnet pack --configuration Release --no-restore
+      
     - name: Push
       run: dotnet nuget push **/*.nupkg --skip-duplicate -k ${{ secrets.NUGET_APIKEY }} -s https://api.nuget.org/v3/index.json
