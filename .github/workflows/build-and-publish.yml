@@ -18,7 +18,7 @@ jobs:
     - name: Build
       run: dotnet build
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test --no-build --logger "trx;logfilename=testResults.trx" --collect:"XPlat Code Coverage"
     - name: Pack
       run: dotnet pack --configuration Release --no-restore
     - name: Push
