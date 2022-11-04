@@ -53,9 +53,13 @@ namespace RvdB.Scrapionize
 			return result;
 		}
 
-		private static DateTime ParseSessionizeDate(string date)
+        #region Helper methods
+        
+        private static DateTime ParseSessionizeDate(string date)
 		{
 			return DateTime.ParseExact(date, Constants.DATE_FORMAT, CultureInfo.InvariantCulture);
 		}
-	}
+
+        #endregion
+    }
 }
