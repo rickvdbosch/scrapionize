@@ -27,7 +27,7 @@ jobs:
       uses: dorny/test-reporter@v1.6.0
       with:
         name: 'Test results'
-        path: 'testResults.trx'
+        path: '**/*.trx'
         reporter: dotnet-trx
 
     - name: ReportGenerator
