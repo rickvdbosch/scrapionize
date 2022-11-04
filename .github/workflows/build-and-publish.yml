@@ -42,7 +42,7 @@ jobs:
       uses: actions/upload-artifact@v2.2.3
       with:
         name: CoverageReport
-        path: 'coveragereport'    
+        path: 'coveragereport/summary.html'    
     
     - name: Pack
       run: dotnet pack --configuration Release --no-restore
