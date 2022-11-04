@@ -36,7 +36,7 @@ jobs:
         title: 'Scrapionize coverage report'
         targetdir: 'coveragereport'
         reports: '**/coverage.cobertura.xml'
-        reporttypes: 'HtmlInline;Cobertura'
+        reporttypes: 'HtmlSummary'
         
     - name: Upload coverage report artifact
       uses: actions/upload-artifact@v2.2.3
