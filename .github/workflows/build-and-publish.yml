@@ -26,8 +26,9 @@ jobs:
     - name: Test Reporter
       uses: dorny/test-reporter@v1.6.0
       with:
-        artifact: 'Test results'
-        name: 'testResults.trx'
+        name: 'Test results'
+        path: 'testResults.trx'
+        reporter: dotnet-trx
 
     - name: ReportGenerator
       uses: danielpalme/ReportGenerator-GitHub-Action@5.1.10
