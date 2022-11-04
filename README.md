@@ -1,3 +1,5 @@
+[![Build & Publish](https://github.com/rickvdbosch/scrapionize/actions/workflows/build-and-publish.yml/badge.svg)](https://github.com/rickvdbosch/scrapionize/actions/workflows/build-and-publish.yml)
+
 # Scrapionize
 
 Scrapionize (a Scraper for Sessionize) is a NuGet package to scrape a Sessionize CFP page and give you the basic information that's
