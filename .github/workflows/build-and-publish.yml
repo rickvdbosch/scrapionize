@@ -36,13 +36,13 @@ jobs:
         title: 'Scrapionize coverage report'
         targetdir: 'coveragereport'
         reports: '**/coverage.cobertura.xml'
-        reporttypes: 'HtmlSummary'
+        reporttypes: 'Html_Dark'
         
     - name: Upload coverage report artifact
       uses: actions/upload-artifact@v2.2.3
       with:
         name: CoverageReport
-        path: 'coveragereport/summary.html'    
+        path: 'coveragereport'    
     
     - name: Pack
       run: dotnet pack --configuration Release --no-restore
