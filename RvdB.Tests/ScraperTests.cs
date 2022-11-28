@@ -2,9 +2,7 @@ using System;
 
 using Xunit;
 
-using RvdB.Scrapionize;
-
-namespace Tests
+namespace RvdB.Scrapionize.Tests
 {
     public class ScraperTests
     {
