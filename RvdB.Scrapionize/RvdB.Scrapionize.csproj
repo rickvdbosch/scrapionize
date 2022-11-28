@@ -3,8 +3,8 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Title>Scrapionize</Title>
-    <PackageVersion>1.5.0</PackageVersion>
-    <Version>1.5.0</Version>
+    <PackageVersion>1.6.0</PackageVersion>
+    <Version>1.6.0</Version>
     <Authors>Rick van den Bosch</Authors>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageProjectUrl>https://github.com/rickvdbosch/scrapionize</PackageProjectUrl>
